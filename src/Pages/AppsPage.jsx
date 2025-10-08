@@ -9,7 +9,6 @@ const AppsPage = () => {
     const { trendingApps } = useTrendingApps();
 
     const userSearchData = userSearch.trim().toLocaleLowerCase();
-    console.log(userSearchData);
     
     const searchResultApps = userSearchData ? trendingApps.filter(app => app.title.toLocaleLowerCase().includes(userSearchData)) : trendingApps;
     
@@ -29,7 +28,7 @@ const AppsPage = () => {
           <div>
             <div className="flex justify-between items-center">
               <div>
-                <span>({trendingApps.length})</span> Apps Found
+                <span>({searchResultApps.length})</span> Apps Found
               </div>
               <div>
                 <label className="input">
