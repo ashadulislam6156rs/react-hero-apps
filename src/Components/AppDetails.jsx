@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import useTrendingApps from "../Hooks/useTrendingApps";
 import downloadImg from "../assets/download_icon.png";
 import likeIcon from "../assets/Like-icon.png";
 import { FaStar } from "react-icons/fa6";
 import Barchart from "./BarProgress";
+import { getLochalStorageData, setLochalStorageData } from "../Utility/LochalStorage";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -12,6 +13,16 @@ const AppDetails = () => {
   const singleData = trendingApps.find((app) => app.id === Number(id));
 
   const [installHandlerAdd, setInstallHandlerAdd] = useState(true);
+
+
+  useEffect(() => {
+  const installed = getLochalStorageData();
+  if (installed.includes(id)) {
+    setInstallHandlerAdd(false); 
+  } else {
+    setInstallHandlerAdd(true); 
+  }
+}, [id]);
 
   if (loading) return <p>Loading.....</p>;
   const {
@@ -79,9 +90,12 @@ const AppDetails = () => {
               </div>
               <div>
                 <button
-                  onClick={() => setInstallHandlerAdd(false)}
-                  className={`bg-[#00D390] text-base  font-medium px-4 py-2 rounded-md cursor-pointer text-white hover:bg-black transition-all ease-in duration-700 ${
-                    installHandlerAdd ? "cursor-not-allowed" : ""
+                  onClick={() => {
+                    setInstallHandlerAdd(false)
+                    setLochalStorageData(id)
+                  }}
+                  className={`bg-[#00D390] text-base   font-medium px-4 py-2 rounded-md text-white transition-all ease-in duration-700 ${
+                    installHandlerAdd ? "hover:bg-black cursor-pointer" : "cursor-not-allowed"
                   }`}
                 >
                   {installHandlerAdd ? `Install Now (${size} MB)` : "Installed"}

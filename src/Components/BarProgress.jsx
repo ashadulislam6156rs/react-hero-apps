@@ -10,11 +10,9 @@ import {
 } from "recharts";
 
 const Barchart = ({ singleData }) => {
-  console.log(singleData);
 
   const { ratings } = singleData;
   const ratingsRev = [...ratings].reverse();
-  console.log(ratingsRev);
 
   return (
     <div className="md:h-90 h-70 w-full">

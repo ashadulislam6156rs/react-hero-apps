@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import useTrendingApps from '../Hooks/useTrendingApps';
 import TreandingApp from './TreandingApp';
-import { Link, useParams } from 'react-router';
+import { Link } from 'react-router';
 
 
 const TrendingApps = () => {
-    const {apps} = useParams();
-
     const {trendingApps} = useTrendingApps();
     // console.log(trendingApps);
     const [handleShowApps,setHandleShowApps] = useState(false);
@@ -30,7 +28,10 @@ const TrendingApps = () => {
 
                     </div>
                     <div className='flex justify-center items-center pb-10'>
-                        <Link to={`/appspage/${handleShowApps ? apps : ""}`} onClick={()=>setHandleShowApps(!handleShowApps)} className="text-white text-xl font-semibold px-8 py-3 rounded-md cursor-pointer bg-[linear-gradient(77deg,_#632EE3,_#9F62F2)] hover:bg-[linear-gradient(100deg,_#9F62F2,_#632EE3)] transition-all ease-in-out duration-700">Show All</Link>
+                        <Link to={"/appspage/"} onClick={() => {
+                            setHandleShowApps(!handleShowApps);
+                            window.scrollTo(0,0); 
+                        }} className="text-white text-xl font-semibold px-8 py-3 rounded-md cursor-pointer bg-[linear-gradient(77deg,_#632EE3,_#9F62F2)] hover:bg-[linear-gradient(100deg,_#9F62F2,_#632EE3)] transition-all ease-in-out duration-700">Show All</Link>
                     </div>
                 </div>
             </div>
