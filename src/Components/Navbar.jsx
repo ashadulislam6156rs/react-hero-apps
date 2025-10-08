@@ -98,7 +98,7 @@ const Navbar = () => {
         </div>
         {/* navbar buttons */}
         <div className="navbar-end space-x-2">
-          <Link to={"https://github.com/ashadulislam6156rs"} className="btn bg-gradient-to-l to-[#632EE3] from-[#9F62F2] text-white">
+          <Link to={"https://github.com/ashadulislam6156rs"} className="btn bg-gradient-to-l hover:from-[#632EE3] hover:to-[#9F62F2] to-[#632EE3] from-[#9F62F2] text-white">
             <FaGithub />
             Contribute
           </Link>

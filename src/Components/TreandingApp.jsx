@@ -1,13 +1,14 @@
 import React from "react";
 import { FaStar } from "react-icons/fa6";
 import { MdOutlineFileDownload } from "react-icons/md";
+import { Link } from "react-router";
 
 const TreandingApp = ({ treindindApp }) => {
     
     const {title,ratingAvg,downloads,image,id} = treindindApp;
     
   return (
-    <div className="card bg-base-100 shadow-sm p-5 hover:scale-97 hover:shadow-lg transition-all ease-in-out duration-500 cursor-pointer">
+    <Link to={`/appdetails/${id}`} className="card bg-base-100 shadow-sm p-5 hover:scale-97 hover:shadow-lg transition-all ease-in-out duration-500 cursor-pointer">
       <figure className="w-full h-full bg-[#f1f5e8b5] rounded-lg">
         <img className="rounded-md"
           src={image}
@@ -24,7 +25,7 @@ const TreandingApp = ({ treindindApp }) => {
                   <button className="bg-[#FFF0E1] text-base font-medium px-2 py-1 rounded-md cursor-pointer text-[#FF8811] flex justify-between items-center gap-1"><FaStar /><span>{ratingAvg}</span></button>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

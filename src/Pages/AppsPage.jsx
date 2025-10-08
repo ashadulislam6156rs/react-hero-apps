@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import useTrendingApps from "../Hooks/useTrendingApps";
 import All_app from "../Components/All_app";
+import ErrorAppNotFound from "../ErrorApps/ErrorAppNotFound";
 
 const AppsPage = () => {
 
@@ -52,11 +53,14 @@ const AppsPage = () => {
                 </label>
               </div>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 py-6">
+            {
+              searchResultApps.length == 0 ? <ErrorAppNotFound/> : <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 py-6">
                           {
                               searchResultApps.map((singleApp,id) => <All_app key={id} singleApp={singleApp}></All_app>)
                 }
             </div>
+            }
+            
           </div>
         </div>
       </div>

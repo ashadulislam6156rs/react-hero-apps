@@ -1,16 +1,16 @@
 import { createBrowserRouter } from "react-router";
 import MainLayout from "../MainLayout/MainLayout";
-import ErrorPage_404 from "../ErrorApps/ErrorPage_404";
 import Home from "../Pages/Home";
 import AppsPage from "../Pages/AppsPage";
 import Installation from "../Pages/Installation";
 import AppDetails from "../Components/AppDetails";
+import ErrorPage_404 from "../ErrorApps/ErrorPage_404";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element:<MainLayout/>,
-        errorElement: <ErrorPage_404 />,
+    errorElement: <ErrorPage_404/>,
         children: [
             {
                 index: true,

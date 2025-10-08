@@ -109,7 +109,7 @@ const Installation = () => {
             <div className="w-full md:w-auto flex md:flex-auto justify-end items-center">
               <button
                 onClick={() => removeHandler(singleAppInstall.id)}
-                className="bg-[#00D390] lg:text-base font-medium px-4 py-2 rounded-md text-white transition-all ease-in duration-700"
+                className="bg-[#00D390] cursor-pointer hover:bg-black lg:text-base font-medium px-4 py-2 rounded-md text-white transition-all ease-in duration-700"
               >
                 Uninstall
               </button>
