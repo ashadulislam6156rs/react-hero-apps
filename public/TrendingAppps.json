@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/TMqyg5Nt/5cf95ae8c3143-384x384.png",
+    "title": "WhatsApp Messenger",
+    "companyName": "Meta Platforms, Inc.",
+    "description": "WhatsApp Messenger lets you send text messages, voice messages, make voice/video calls and share images, documents, user locations and other media, with end-to-end encryption and minimal fees.",
+    "size": 57,
+    "reviews": 420,
+    "ratingAvg": 4.4,
+    "downloads": 5,
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 900000 },
+      { "name": "4 star", "count": 5500000 },
+      { "name": "5 star", "count": 37000000 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/mKkmjZS/Instagram.jpg",
+    "title": "Instagram",
+    "companyName": "Meta Platforms, Inc.",
+    "description": "Instagram is a multimedia social platform where users can share photos, videos, stories, live broadcasts, and Reels. Connect with followers, explore content, and discover trending topics globally.",
+    "size": 34,
+    "reviews": 30,
+    "ratingAvg": 4.3,
+    "downloads": 10,
+    "ratings": [
+      { "name": "1 star", "count": 600000 },
+      { "name": "2 star", "count": 400000 },
+      { "name": "3 star", "count": 1200000 },
+      { "name": "4 star", "count": 8000000 },
+      { "name": "5 star", "count": 21500000 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/VYRK6vdN/images-3.png",
+    "title": "Spotify: Music and Podcasts",
+    "companyName": "Spotify Ltd.",
+    "description": "Spotify gives you instant access to millions of songs and podcasts. Create playlists, discover new releases, and listen offline. With personalized recommendations and curated content, music becomes yours.",
+    "size": 25,
+    "reviews": 28,
+    "ratingAvg": 4.6,
+    "downloads": 10,
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 600000 },
+      { "name": "4 star", "count": 4000000 },
+      { "name": "5 star", "count": 23500000 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/wZdkPjQH/download.png",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "description": "YouTube is a video-sharing service where users can watch, like, share, comment, and upload their own videos, browse channels, create playlists, stream live, and explore content across every category.",
+    "size": 44,
+    "reviews": 31,
+    "ratingAvg": 4.4,
+    "downloads": 12,
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 900000 },
+      { "name": "4 star", "count": 6500000 },
+      { "name": "5 star", "count": 24000000 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/jZ31cBkG/TikTok.png",
+    "title": "TikTok",
+    "companyName": "ByteDance Ltd.",
+    "description": "TikTok is a video platform that lets you create and discover short videos. With trending challenges, filters, music, and interactive content, it’s a place to express creativity and go viral.",
+    "size": 94,
+    "reviews": 45,
+    "ratingAvg": 4.5,
+    "downloads": 30,
+    "ratings": [
+      { "name": "1 star", "count": 700000 },
+      { "name": "2 star", "count": 400000 },
+      { "name": "3 star", "count": 1000000 },
+      { "name": "4 star", "count": 9000000 },
+      { "name": "5 star", "count": 34100000 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/DH7YFTjQ/Google-Maps.jpg",
+    "title": "Google Maps",
+    "companyName": "Google LLC",
+    "description": "Google Maps helps you navigate the world with real-time GPS, traffic, route planning, 360° imagery, transit info, and location discovery. Explore places, find directions, and share with friends.",
+    "size": 50,
+    "reviews": 300,
+    "ratingAvg": 4.5,
+    "downloads": 50,
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 800000 },
+      { "name": "4 star", "count": 5500000 },
+      { "name": "5 star", "count": 23000000 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co/VpPrbJHR/netflix.png",
+    "title": "Netflix",
+    "companyName": "Netflix, Inc.",
+    "description": "Netflix is a streaming service that lets you watch different TV shows, movies, documentaries, and original content. Customize your watch list, get recommendations, and stream on multiple devices.",
+    "size": 79,
+    "reviews": 25,
+    "ratingAvg": 4.6,
+    "downloads": 14,
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 700000 },
+      { "name": "4 star", "count": 6000000 },
+      { "name": "5 star", "count": 17300000 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co/RJdydn8/Spotify-Android.png",
+    "title": "Spotify for Android",
+    "companyName": "Spotify Ltd.",
+    "description": "Spotify for Android gives you on-the-go access to music, podcasts, and curated playlists with offline listening, smart search, and personalized radio stations for every mood.",
+    "size": 24,
+    "reviews": 150,
+    "ratingAvg": 4.6,
+    "downloads": 16,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 400000 },
+      { "name": "4 star", "count": 3500000 },
+      { "name": "5 star", "count": 12500000 }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co/PsJHP2qd/Microsoft-Office-Word-svg.png",
+    "title": "Microsoft Word",
+    "companyName": "Microsoft Corporation",
+    "description": "Microsoft Word is a document editor that helps you create, edit, view and share documents from anywhere. Collaborate in real-time, track changes, and access files in the cloud.",
+    "size": 48,
+    "reviews": 1200,
+    "ratingAvg": 4.4,
+    "downloads": 50,
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 70000 },
+      { "name": "4 star", "count": 300000 },
+      { "name": "5 star", "count": 1020000 }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://i.ibb.co/5X4Sp3MP/Telegram.png",
+    "title": "Telegram",
+    "companyName": "Telegram FZ-LLC",
+    "description": "Telegram is a messaging app focusing on speed and security. Send messages, photos, videos, files of any type, and create groups or channels for large communities.",
+    "size": 35,
+    "reviews": 1400,
+    "ratingAvg": 4.7,
+    "downloads": 17,
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 60000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 1000000 },
+      { "name": "5 star", "count": 12500000 }
+    ]
+  },
+  {
+    "id": 11,
+    "image": "https://i.ibb.co/81T11yg/Slack-icon-2019-svg.png",
+    "title": "Slack",
+    "companyName": "Slack Technologies",
+    "description": "Slack is a team communication tool that organizes conversations into channels, supports file sharing, integrations with many services, and provides searchable archive of chat history.",
+    "size": 62,
+    "reviews": 800,
+    "ratingAvg": 4.5,
+    "downloads": 13,
+    "ratings": [
+      { "name": "1 star", "count": 20000 },
+      { "name": "2 star", "count": 15000 },
+      { "name": "3 star", "count": 50000 },
+      { "name": "4 star", "count": 200000 },
+      { "name": "5 star", "count": 760000 }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://i.ibb.co/QjdVs26S/zoom-meetings.webp",
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications, Inc.",
+    "description": "Zoom brings easy and reliable video communications. Join meetings, host webinars, chat with colleagues, and share screen — all in HD with minimal latency and security features.",
+    "size": 35,
+    "reviews": 257,
+    "ratingAvg": 4.4,
+    "downloads": 23,
+    "ratings": [
+      { "name": "1 star", "count": 30000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 50000 },
+      { "name": "4 star", "count": 250000 },
+      { "name": "5 star", "count": 1750000 }
+    ]
+  },
+  {
+    "id": 13,
+    "image": "https://i.ibb.co/SD2YxTgn/Gmail-icon-svg.webp",
+    "title": "Gmail",
+    "companyName": "Google LLC",
+    "description": "Gmail is an email service app that lets you send, receive, and manage your emails efficiently. It includes powerful search, spam filtering, categorization, and integration with Google services.",
+    "size": 21,
+    "reviews": 3200,
+    "ratingAvg": 4.5,
+    "downloads": 27,
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 900000 },
+      { "name": "4 star", "count": 5500000 },
+      { "name": "5 star", "count": 26000000 }
+    ]
+  },
+  {
+    "id": 14,
+    "image": "https://i.ibb.co/QFRrjTCq/Google-Drive-svg.png",
+    "title": "Google Drive",
+    "companyName": "Google LLC",
+    "description": "Google Drive offers secure cloud storage, file sharing, synchronization, and collaboration with Google Docs, Sheets, and Slides. Perfect for individuals, teams, and businesses.",
+    "size": 30,
+    "reviews": 1800,
+    "ratingAvg": 4.4,
+    "downloads": 43,
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 800000 },
+      { "name": "4 star", "count": 5500000 },
+      { "name": "5 star", "count": 25000000 }
+    ]
+  },
+  {
+    "id": 15,
+    "image": "https://i.ibb.co/Gv8c9JNq/Microsoft-Office-Excel-svg.png",
+    "title": "Microsoft Excel",
+    "companyName": "Microsoft Corporation",
+    "description": "Microsoft Excel is a spreadsheet app that enables data analysis, formula use, charts, pivot tables, and collaboration with real-time updates across devices.",
+    "size": 59,
+    "reviews": 1400,
+    "ratingAvg": 4.3,
+    "downloads": 26,
+    "ratings": [
+      { "name": "1 star", "count": 40000 },
+      { "name": "2 star", "count": 25000 },
+      { "name": "3 star", "count": 70000 },
+      { "name": "4 star", "count": 300000 },
+      { "name": "5 star", "count": 1000000 }
+    ]
+  },
+  {
+    "id": 16,
+    "image": "https://i.ibb.co/XxH2NtBP/Microsoft-Power-Point-svg.png",
+    "title": "Microsoft PowerPoint",
+    "companyName": "Microsoft Corporation",
+    "description": "PowerPoint lets you create, present, and share dynamic slideshows with animations, transitions, multimedia embedding, and collaboration features across platforms.",
+    "size": 56,
+    "reviews": 1100,
+    "ratingAvg": 4.2,
+    "downloads": 53,
+    "ratings": [
+      { "name": "1 star", "count": 30000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 60000 },
+      { "name": "4 star", "count": 200000 },
+      { "name": "5 star", "count": 900000 }
+    ]
+  },
+  {
+    "id": 17,
+    "image": "https://i.ibb.co/d44B7X8t/Google-Photos-svg.png",
+    "title": "Google Photos",
+    "companyName": "Google LLC",
+    "description": "Google Photos is a photo storage and sharing service with smart albums, AI-powered search, editing tools, and unlimited backup (within limits). Organize and revisit your memories easily.",
+    "size": 28,
+    "reviews": 1600,
+    "ratingAvg": 4.7,
+    "downloads": 52,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 400000 },
+      { "name": "4 star", "count": 2500000 },
+      { "name": "5 star", "count": 9000000 }
+    ]
+  },
+  {
+    "id": 18,
+    "image": "https://i.ibb.co/Q3C6vH3s/gmail-go.jpg",
+    "title": "Gmail Go",
+    "companyName": "Google LLC",
+    "description": "Gmail Go is a lightweight version of Gmail for lower-end devices. Manage emails efficiently with essential features, quick actions, and a streamlined interface.",
+    "size": 22,
+    "reviews": 723,
+    "ratingAvg": 4.5,
+    "downloads": 83,
+    "ratings": [
+      { "name": "1 star", "count": 10000 },
+      { "name": "2 star", "count": 8000 },
+      { "name": "3 star", "count": 20000 },
+      { "name": "4 star", "count": 150000 },
+      { "name": "5 star", "count": 2800000 }
+    ]
+  },
+  {
+    "id": 19,
+    "image": "https://i.ibb.co/gbDJwpQd/Twitter-svg.png",
+    "title": "Twitter",
+    "companyName": "Twitter, Inc.",
+    "description": "Twitter is a social networking service where users post and interact via messages (tweets), follow interests, trends, hashtags, and engage with global conversations in real-time.",
+    "size": 35,
+    "reviews": 987,
+    "ratingAvg": 4.3,
+    "downloads": 72,
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 700000 },
+      { "name": "4 star", "count": 3500000 },
+      { "name": "5 star", "count": 15500000 }
+    ]
+  },
+  {
+    "id": 20,
+    "image": "https://i.ibb.co/ds05Qc4q/snapchat.jpg",
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "description": "Snapchat is a multimedia messaging app with ephemeral photos and videos (“Snaps”), stories, augmented reality filters, and chat features that disappear after viewing.",
+    "size": 35,
+    "reviews": 1800,
+    "ratingAvg": 4.2,
+    "downloads": 34,
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 600000 },
+      { "name": "4 star", "count": 3000000 },
+      { "name": "5 star", "count": 14500000 }
+    ]
+  }
+]
