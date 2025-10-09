@@ -14,7 +14,6 @@ const setLochalStorageData = (id) => {
     try {
         const isduplicate = installId.includes(id);
         if (isduplicate) {
-            alert("This app are alredy installed.")
             return;
         } else {
             const updateInstalledApp = [...installId, id];
