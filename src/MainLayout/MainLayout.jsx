@@ -2,11 +2,11 @@
 import Navbar from '../Components/Navbar';
 import { Outlet } from 'react-router';
 import Footer from '../Components/Footer';
-import { toast, ToastContainer } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const MainLayout = () => {
-    const notify = () => toast("Wow so easy!");
+    
     return (
         <>
             <Navbar></Navbar>
@@ -15,7 +15,7 @@ const MainLayout = () => {
             </main>
             <Footer></Footer>
             <div>
-        <button onClick={notify}>Notify!</button>
+        
         <ToastContainer />
       </div>
         </>

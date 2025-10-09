@@ -5,7 +5,10 @@ import downloadImg from "../assets/download_icon.png";
 import likeIcon from "../assets/Like-icon.png";
 import { FaStar } from "react-icons/fa6";
 import Barchart from "./BarProgress";
-import { getLochalStorageData, setLochalStorageData } from "../Utility/LochalStorage";
+import {
+  getLochalStorageData,
+  setLochalStorageData,
+} from "../Utility/LochalStorage";
 import { toast } from "react-toastify";
 import Loading from "./Loading/Loading";
 
@@ -16,19 +19,17 @@ const AppDetails = () => {
 
   const [installHandlerAdd, setInstallHandlerAdd] = useState(true);
 
-
   useEffect(() => {
-  const installed = getLochalStorageData();
-  if (installed.includes(id)) {
-    setInstallHandlerAdd(false); 
-  } else {
-    setInstallHandlerAdd(true); 
-
-  }
-}, [id]);
+    const installed = getLochalStorageData();
+    if (installed.includes(id)) {
+      setInstallHandlerAdd(false);
+    } else {
+      setInstallHandlerAdd(true);
+    }
+  }, [id]);
 
   if (loading) return <Loading />;
-  
+
   const {
     title,
     ratingAvg,
@@ -40,10 +41,9 @@ const AppDetails = () => {
     description,
   } = singleData;
 
-
   return (
     <>
-       <div className="md:px-7 px-2 py-10 max-w-7xl mx-auto">
+      <div className="md:px-7 px-2 py-10 max-w-7xl mx-auto">
         {/* Card */}
         <div>
           <div className="card flex flex-col sm:flex-row gap-10 border-b-2 border-gray-200 pb-4 rounded-none items-center">
@@ -96,12 +96,18 @@ const AppDetails = () => {
               <div>
                 <button
                   onClick={() => {
-                    setInstallHandlerAdd(false)
-                    setLochalStorageData(id)
-                    installHandlerAdd ? toast.success(`🎉Yahoo! ${title} installed successfully in SmApps ToDo List!`) : ""
+                    setInstallHandlerAdd(false);
+                    setLochalStorageData(id);
+                    installHandlerAdd
+                      ? toast.success(
+                          `🎉Yahoo! ${title} installed successfully in SmApps ToDo List!`
+                        )
+                      : "";
                   }}
                   className={`bg-[#00D390] text-base   font-medium px-4 py-2 rounded-md text-white transition-all ease-in duration-700 ${
-                    installHandlerAdd ? "hover:bg-black cursor-pointer" : "cursor-not-allowed"
+                    installHandlerAdd
+                      ? "hover:bg-black cursor-pointer"
+                      : "cursor-not-allowed"
                   }`}
                 >
                   {installHandlerAdd ? `Install Now (${size} MB)` : "Installed"}
@@ -124,8 +130,7 @@ const AppDetails = () => {
           <h1 className="text-xl font-bold text-[#001931] py-2">Description</h1>
           <p className="text-[#627382] text-base">{description}</p>
         </div>
-        </div>
-     
+      </div>
     </>
   );
 };

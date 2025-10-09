@@ -67,7 +67,7 @@ const Navbar = () => {
             className="text-sm md:text-base font-semibold flex gap-1 items-center"
           >
             <img className="w-6" src={logo} alt="" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-l to-[#632EE3] from-[#9F62F2] -webkit-text-fill-color">HERO.IO</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-l to-[#632EE3] from-[#9F62F2] -webkit-text-fill-color">Smart Apps</span>
           </NavLink>
         </div>
         {/* navbar menu list*/}

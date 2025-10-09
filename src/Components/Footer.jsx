@@ -14,18 +14,18 @@ const Footer = () => {
             >
               <img className="w-6" src={logo} alt="" />
               <span className="text-transparent bg-clip-text bg-gradient-to-l to-[#632EE3] from-[#9F62F2] -webkit-text-fill-color">
-                HERO.IO
+                Smart Apps
               </span>
             </NavLink>
           </h6>
           <p className="text-white">
-            HERO.IO is a modern, cutting-edge platform designed to empower users
+            Smart Apps is a modern, cutting-edge platform designed to empower users
             with speed, security, and innovation. Focusing on simplicity and
             high performance, it helps individuals and businesses accomplish
             tasks more efficiently and intelligently. With an intuitive
-            interface, robust tools, and strong security measures, HERO.IO makes
+            interface, robust tools, and strong security measures, Smart Apps makes
             work faster, smarter, and more reliable. Whether managing projects,
-            collaborating with teams, or exploring new opportunities, HERO.IO
+            collaborating with teams, or exploring new opportunities, Smart Apps
             simplifies complex processes and transforms productivity in today’s
             fast-paced world.
           </p>
@@ -82,7 +82,7 @@ const Footer = () => {
         <aside>
           <p className="md:text-sm text-xs">
             Copyright © {new Date().getFullYear()} - All right reserved by
-            HERO.IO
+           Smart Apps
           </p>
         </aside>
       </footer>
