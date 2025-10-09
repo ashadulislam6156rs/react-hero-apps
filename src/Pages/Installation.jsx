@@ -3,9 +3,12 @@ import { getLochalStorageData } from "../Utility/LochalStorage";
 import useTrendingApps from "../Hooks/useTrendingApps";
 import { FaStar } from "react-icons/fa6";
 import { MdOutlineFileDownload } from "react-icons/md";
+import { toast } from "react-toastify";
+import ErrorAppNotInstall from "../ErrorApps/ErrorAppNotInstall";
+import Loading from "../Components/Loading/Loading";
 
 const Installation = () => {
-  const { trendingApps } = useTrendingApps();
+  const { trendingApps, loading } = useTrendingApps();
 
   const [SortApps, setSortApps] = useState("none");
   const [myInstallApp, setMyInstallApp] = useState([]);
@@ -35,13 +38,17 @@ const Installation = () => {
 
   const sortHandler = () => {
     if (SortApps === "dec") {
-      return [...myInstallApp].sort((a, b) => b.size - a.size);
+      return [...myInstallApp].sort((a, b) => b.downloads - a.downloads);
     }
     if (SortApps === "asc") {
-      return [...myInstallApp].sort((a, b) => a.size - b.size);
+      return [...myInstallApp].sort((a, b) => a.downloads - b.downloads);
     }
     return myInstallApp;
   };
+  
+  
+
+  const CurrentApps = sortHandler();
 
   return (
     <div className="max-w-7xl mx-auto md:px-7 px-2">
@@ -64,15 +71,17 @@ const Installation = () => {
             value={SortApps}
             onChange={(e) => setSortApps(e.target.value)}
           >
-            <option value="none">Sort By Size</option>
+            <option value="none">Sort By Downloads Size</option>
             <option value="dec">High To Low</option>
             <option value="asc">Low To High</option>
           </select>
         </label>
       </div>
 
-      <div className="grid grid-cols-1 gap-5 py-6">
-        {sortHandler().map((singleAppInstall, index) => (
+      {
+        loading ? <Loading /> :
+          <div className="grid grid-cols-1 gap-5 py-6">
+        { CurrentApps.length == 0 ? <ErrorAppNotInstall/> : CurrentApps.map((singleAppInstall, index) => (
           <div
             key={index}
             className="flex justify-between md:flex-row flex-col items-center bg-white p-2 md:p-5 shadow-sm rounded-lg"
@@ -108,7 +117,10 @@ const Installation = () => {
 
             <div className="w-full md:w-auto flex md:flex-auto justify-end items-center">
               <button
-                onClick={() => removeHandler(singleAppInstall.id)}
+                onClick={() => {
+                  removeHandler(singleAppInstall.id)
+                  toast.success(`🗑️ ${singleAppInstall.title} Uninstall from SmApps ToDo List successfully!`)
+                }}
                 className="bg-[#00D390] cursor-pointer hover:bg-black lg:text-base font-medium px-4 py-2 rounded-md text-white transition-all ease-in duration-700"
               >
                 Uninstall
@@ -117,6 +129,7 @@ const Installation = () => {
           </div>
         ))}
       </div>
+    }  
     </div>
   );
 };

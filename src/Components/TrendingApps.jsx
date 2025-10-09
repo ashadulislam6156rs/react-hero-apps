@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import useTrendingApps from '../Hooks/useTrendingApps';
 import TreandingApp from './TreandingApp';
 import { Link } from 'react-router';
+import Loading from './Loading/Loading';
 
 
 const TrendingApps = () => {
-    const {trendingApps} = useTrendingApps();
+    const {trendingApps, loading} = useTrendingApps();
     // console.log(trendingApps);
     const [handleShowApps,setHandleShowApps] = useState(false);
     // const handleShowApps = () => {
@@ -14,8 +15,10 @@ const TrendingApps = () => {
     const trendingAppsSlice = trendingApps.slice(0, 8);
     
     return (
-        <>
-            <div>
+        <div>
+            {
+                loading ? <Loading /> : 
+                     <div>
                 <div className='text-center py-10'>
                 <h1 className='text[#001931] font-bold text-4xl pb-2'>Trending Apps</h1>
                 <p className='text-[#627382] text-base'>Explore All Trending Apps on the Market developed by us</p>
@@ -35,8 +38,10 @@ const TrendingApps = () => {
                     </div>
                 </div>
             </div>
+            }
+           
 
-        </>
+        </div>
     );
 };
 

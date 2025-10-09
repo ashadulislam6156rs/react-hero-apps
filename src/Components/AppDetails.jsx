@@ -7,6 +7,7 @@ import { FaStar } from "react-icons/fa6";
 import Barchart from "./BarProgress";
 import { getLochalStorageData, setLochalStorageData } from "../Utility/LochalStorage";
 import { toast } from "react-toastify";
+import Loading from "./Loading/Loading";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -26,7 +27,8 @@ const AppDetails = () => {
   }
 }, [id]);
 
-  if (loading) return <p>Loading.....</p>;
+  if (loading) return <Loading />;
+  
   const {
     title,
     ratingAvg,
@@ -96,7 +98,7 @@ const AppDetails = () => {
                   onClick={() => {
                     setInstallHandlerAdd(false)
                     setLochalStorageData(id)
-                    installHandlerAdd ? toast.success("Yahoo 🎉!! SmPlan ToDo List With Reminder Installed Successfully!") : ""
+                    installHandlerAdd ? toast.success(`🎉Yahoo! ${title} installed successfully in SmApps ToDo List!`) : ""
                   }}
                   className={`bg-[#00D390] text-base   font-medium px-4 py-2 rounded-md text-white transition-all ease-in duration-700 ${
                     installHandlerAdd ? "hover:bg-black cursor-pointer" : "cursor-not-allowed"

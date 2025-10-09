@@ -1,18 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import useTrendingApps from "../Hooks/useTrendingApps";
 import All_app from "../Components/All_app";
 import ErrorAppNotFound from "../ErrorApps/ErrorAppNotFound";
+import Loading from "../Components/Loading/Loading";
 
 const AppsPage = () => {
+  const [userSearch, setUserSearch] = useState("");
+  const [searchTypehandle, setSearchTypehandle] = useState(false);
 
-    const [userSearch,setUserSearch] = useState('')
+  const { trendingApps, loading } = useTrendingApps();
 
-    const { trendingApps } = useTrendingApps();
+  const userSearchData = userSearch.trim().toLocaleLowerCase();
 
-    const userSearchData = userSearch.trim().toLocaleLowerCase();
-    
-    const searchResultApps = userSearchData ? trendingApps.filter(app => app.title.toLocaleLowerCase().includes(userSearchData)) : trendingApps;
-    
+  const searchResultApps = userSearchData
+    ? trendingApps.filter((app) =>
+        app.title.toLocaleLowerCase().includes(userSearchData)
+      )
+    : trendingApps;
+
+  useEffect(() => {
+    if (userSearchData) {
+      setSearchTypehandle(true);
+    } else {
+      setSearchTypehandle(false);
+    }
+  }, [searchTypehandle]);
+
   return (
     <div className="max-w-7xl mx-auto md:px-7 px-2">
       <div>
@@ -49,18 +62,31 @@ const AppsPage = () => {
                       <path d="m21 21-4.3-4.3"></path>
                     </g>
                   </svg>
-                  <input type="search" value={userSearch} onChange={(e)=> setUserSearch(e.target.value)} required placeholder="Search Apps..." />
+                  <input
+                    type="search"
+                    value={userSearch}
+                    onChange={(e) => setUserSearch(e.target.value)}
+                    required
+                    placeholder="Search Apps..."
+                  />
                 </label>
               </div>
             </div>
-            {
-              searchResultApps.length == 0 ? <ErrorAppNotFound/> : <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 py-6">
-                          {
-                              searchResultApps.map((singleApp,id) => <All_app key={id} singleApp={singleApp}></All_app>)
-                }
-            </div>
-            }
-            
+            {loading ? (
+              <Loading />
+            ) : searchTypehandle ? (
+              <Loading />
+              ) : 
+                
+            searchResultApps.length === 0 ? (
+              <ErrorAppNotFound />
+            ) : (
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 py-6">
+                {searchResultApps.map((singleApp, id) => (
+                  <All_app key={id} singleApp={singleApp} />
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>

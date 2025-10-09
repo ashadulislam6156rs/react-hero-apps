@@ -33,7 +33,7 @@ const Banner = () => {
                 <span>Google Play</span>
               </Link>
               <Link
-                to={"https://play.google.com/store/apps/"}
+                to={"https://www.apple.com/app-store/"}
                 className="btn py-5 border-2 border-[#D2D2D2] flex items-center hover:bg-black hover:text-white transition-all ease-in-out duration-700 font-semibold text-[#001931]"
               >
                 <img className="w-5" src={appStroe} alt="" />
