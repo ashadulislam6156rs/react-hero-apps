@@ -64,11 +64,11 @@ const Installation = () => {
         </p>
       </div>
 
-      <div className="flex justify-between items-center pb-4">
-        <div>
-          <span>({myInstallApp.length})</span> Apps Found
+      <div className="flex justify-between md:flex-row flex-col gap-5 md:gap-0 md:items-center pb-4">
+        <div className="text-xl">
+          <span >({myInstallApp.length})</span> Apps Found
         </div>
-        <label className="form-control max-w-xs">
+        <label className="form-control w-50 md:max-w-xs border-[#6c38e5] border rounded-md">
           <select
             className="select select-bordered"
             value={SortApps}
@@ -83,14 +83,14 @@ const Installation = () => {
 
       {
         
-         <div className="grid grid-cols-1 gap-5 py-6">
+         <div className="grid grid-cols-1 gap-5 md:mt-6 pb-6">
         { CurrentApps.length == 0 ? <ErrorAppNotInstall/> : CurrentApps.map((singleAppInstall, index) => (
           <div
             key={index}
-            className="flex justify-between md:flex-row flex-col items-center bg-white p-2 md:p-5 shadow-sm rounded-lg"
+            className="flex justify-between items-center bg-white p-2 md:p-5 shadow-sm rounded-lg"
           >
-            <div className="flex gap-3 md:gap-6 items-center">
-              <figure className="w-auto h-20 md:h-48 bg-[#f1f5e8b5] rounded-lg">
+            <div className="flex gap-3 md:gap-6 items-center flex-1">
+              <figure className="rounded-lg w-auto h-20 md:h-48 ">
                 <img
                   className="rounded-md w-20 md:w-48"
                   src={singleAppInstall.image}
@@ -98,37 +98,34 @@ const Installation = () => {
                 />
               </figure>
               <div className="space-y-2">
-                <h2 className="lg:text-3xl md:text-xl text-xs font-bold text-[#001931] pb-1">
-                  {singleAppInstall.title}:{" "}
-                  <span>{singleAppInstall.companyName}</span>
+                <h2 className="lg:text-3xl md:text-2xl text-xs font-bold text-[#001931] pb-1">
+                  {singleAppInstall.title}
                 </h2>
                 <div className="flex md:gap-4 gap-1 lg:gap-7 items-center">
-                  <button className="text-base font-medium px-2 py-1 rounded-md cursor-pointer text-[#00D390] flex justify-between items-center gap-1">
+                  <button className="md:text-xl text-xs font-medium py-1 rounded-md cursor-pointer text-[#00D390] flex justify-between items-center gap-1">
                     <MdOutlineFileDownload />
                     <span>{singleAppInstall.downloads}M</span>
                   </button>
-                  <button className="text-base font-medium px-2 py-1 rounded-md cursor-pointer text-[#FF8811] flex justify-between items-center gap-1">
+                  <button className="md:text-xl text-xs font-medium px-2 py-1 rounded-md cursor-pointer text-[#FF8811] flex justify-between items-center gap-1">
                     <FaStar />
                     <span>{singleAppInstall.ratingAvg}</span>
                   </button>
-                  <p className="text-[#627382] text-base font-medium">
+                  <p className="text-[#627382] md:text-xl text-xs font-medium">
                     {singleAppInstall.size} <span>MB</span>
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="w-full md:w-auto flex md:flex-auto justify-end items-center">
-              <button
+            <button
                 onClick={() => {
                   removeHandler(singleAppInstall.id)
                   toast.success(`🗑️ ${singleAppInstall.title} Uninstall from SmApps ToDo List successfully!`)
                 }}
-                className="bg-[#00D390] cursor-pointer hover:bg-black lg:text-base font-medium px-4 py-2 rounded-md text-white transition-all ease-in duration-700"
+                className="bg-[#00D390] cursor-pointer hover:bg-black text-xs md:text-xl font-medium px-2 py-2 md:px-6 md:py-3 rounded-md text-white transition-all ease-in duration-700"
               >
                 Uninstall
               </button>
-            </div>
           </div>
         ))}
       </div> 

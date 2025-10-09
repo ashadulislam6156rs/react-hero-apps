@@ -27,14 +27,14 @@ const Banner = () => {
             <div className="flex gap-2 [@media(min-width:350px)]:gap-5 sm:gap-6">
               <Link
                 to={"https://play.google.com/"}
-                className="btn py-5 border-2 border-[#D2D2D2] flex items-center hover:bg-black hover:text-white transition-all ease-in-out duration-700 font-semibold text-[#001931]"
+                className="btn py-5 border-1 border-[#6c38e5] flex items-center hover:bg-black hover:text-white transition-all ease-in-out duration-700 font-semibold text-[#001931]"
               >
                 <img className="w-5" src={googlePlay} alt="" />
                 <span>Google Play</span>
               </Link>
               <Link
                 to={"https://www.apple.com/app-store/"}
-                className="btn py-5 border-2 border-[#D2D2D2] flex items-center hover:bg-black hover:text-white transition-all ease-in-out duration-700 font-semibold text-[#001931]"
+                className="btn py-5 border-1 border-[#6c38e5] flex items-center hover:bg-black hover:text-white transition-all ease-in-out duration-700 font-semibold text-[#001931]"
               >
                 <img className="w-5" src={appStroe} alt="" />
                 <span>App Store</span>

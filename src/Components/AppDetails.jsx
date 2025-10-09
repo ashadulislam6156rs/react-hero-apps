@@ -49,7 +49,7 @@ const AppDetails = () => {
         {/* Card */}
         <div>
           <div className="card flex flex-col sm:flex-row gap-10 border-b-2 border-gray-200 pb-4 rounded-none items-center">
-            <figure className="w-80 h-60 bg-[#f1f5e8b5] rounded-lg">
+            <figure className="md:w-80 md:h-60 p-3 md:p-0 bg-[#f1f5e8b5] rounded-lg">
               <img className="rounded-md" src={image} alt="Shoes" />
             </figure>
             <div className="space-y-3 w-full">

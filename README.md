@@ -8,12 +8,12 @@ The platform focuses on speed, user experience, and real-time data handling to p
 # Technologies Used:
 | Category | Technologies |
 |-----------|---------------|
-| **Frontend** | React |
+| **Frontend** | React && JavaScript (ES6+) |
 | **Styling & UI** | Tailwind CSS, DaisyUI |
 | **Routing** | React Router DOM |
 | **Notifications** | React Toastify |
 | **Charts & Data Visualization** | Recharts |
-| **Data Handling** | Axios, Custom React Hooks |
+| **Data Handling** | Axios, Custom React Hooks, LocalStorage |
 | **Icons** | React Icons |
 | **Build Tool** | Vite |
 | **Version Control** | Git & GitHub |

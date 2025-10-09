@@ -6,7 +6,7 @@ import Loading from "../Components/Loading/Loading";
 
 const AppsPage = () => {
   const [userSearch, setUserSearch] = useState("");
-  // const [searchTypehandle, setSearchTypehandle] = useState(false);
+
    const [searchLoading, setSearchLoading] = useState(false);
 
   const { trendingApps, loading } = useTrendingApps();
@@ -22,21 +22,17 @@ const AppsPage = () => {
   useEffect(() => {
     if (userSearchData) {
       setSearchLoading(true);
-      const timer = setTimeout(() => {
-        setSearchLoading(false);
-      }, 5000);
-     return () => clearTimeout(timer);
-
+      setTimeout(() => setSearchLoading(false),1000)
     } else {
       setSearchLoading(false);
     }
-  }, [searchLoading]);
+  }, [userSearchData]);
 
-
+ 
   return (
     <>
-      {
-         loading ? <Loading /> :
+      {loading ? <Loading/> :
+         
       <div className="max-w-7xl mx-auto md:px-7 px-2">
         <div>
           <div className="text-center py-10">
@@ -51,12 +47,12 @@ const AppsPage = () => {
           {/* all cards */}
           <div>
             <div>
-              <div className="flex justify-between items-center">
-                <div>
+              <div className="flex justify-between md:flex-row flex-col gap-5 md:gap-0 md:items-center">
+                <div className="text-xl">
                   <span>({searchResultApps.length})</span> Apps Found
                 </div>
                 <div>
-                  <label className="input">
+                  <label className="input border-[#6c38e5] border">
                     <svg
                       className="h-[1em] opacity-50"
                       xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +69,7 @@ const AppsPage = () => {
                         <path d="m21 21-4.3-4.3"></path>
                       </g>
                     </svg>
-                    <input
+                      <input
                       type="search"
                       value={userSearch}
                       onChange={(e) => setUserSearch(e.target.value)}
@@ -83,20 +79,17 @@ const AppsPage = () => {
                   </label>
                 </div>
                   </div>
-                  {
-                    loading ? <Loading /> : searchLoading ? <Loading /> : 
-                      <div>
-                {searchResultApps.length === 0 ? (
-                  <ErrorAppNotFound />
-                ) : (
+                  
+                   
+               
+                { searchLoading ? <Loading/> : searchResultApps.length == 0 ? <ErrorAppNotFound/> :
+                  
                   <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 py-6">
-                    {searchResultApps.map((singleApp, id) => (
-                      <All_app key={id} singleApp={singleApp} />
-                    ))}
+                   {  searchResultApps.map((singleApp) => <All_app singleApp={singleApp} ></All_app>)}
                   </div>
-                )}
-              </div>
-                 }
+                }
+              
+                 
             </div>
           </div>
         </div>

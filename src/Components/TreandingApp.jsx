@@ -9,7 +9,7 @@ const TreandingApp = ({ treindindApp }) => {
     
   return (
     <Link to={`/appdetails/${id}`} className="card bg-base-100 shadow-sm p-5 hover:scale-97 hover:shadow-lg transition-all ease-in-out duration-500 cursor-pointer">
-      <figure className="w-full h-full bg-[#f1f5e8b5] rounded-lg">
+      <figure className="rounded-lg">
         <img className="rounded-md"
           src={image}
           alt="Shoes"
