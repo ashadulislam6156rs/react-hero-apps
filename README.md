@@ -1,16 +1,19 @@
-# React + Vite
+# App Name: <span style="font-size:22px;">Smart Apps<span>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# App Description:
+**Smart Apps** is a modern web application designed to showcase and manage trending mobile and web apps efficiently.  
+It allows users to explore top-rated, popular, and newly released apps in a clean and interactive interface.  
+The platform focuses on speed, user experience, and real-time data handling to provide smooth app discovery.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Technologies Used:
+| Category | Technologies |
+|-----------|---------------|
+| **Frontend** | React |
+| **Styling & UI** | Tailwind CSS, DaisyUI |
+| **Routing** | React Router DOM |
+| **Notifications** | React Toastify |
+| **Charts & Data Visualization** | Recharts |
+| **Data Handling** | Axios, Custom React Hooks |
+| **Icons** | React Icons |
+| **Build Tool** | Vite |
+| **Version Control** | Git & GitHub |

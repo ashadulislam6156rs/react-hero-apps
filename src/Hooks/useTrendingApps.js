@@ -8,7 +8,7 @@ const useTrendingApps = () => {
     const [error, setError] = useState(null)
     
     useEffect(() => {
-        axios('../TrendingAppps.json').then(data => setTrendingApps(data.data)).catch(err => setError(err)).finally(load => setLoading(load))
+        axios('/TrendingAppps.json').then(data => setTrendingApps(data.data)).catch(err => setError(err)).finally(() => setLoading(false))
         
         
     }, [])

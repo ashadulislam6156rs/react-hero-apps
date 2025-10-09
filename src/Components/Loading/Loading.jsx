@@ -2,11 +2,11 @@ import React from "react";
 
 const Loading = () => {
   return (
-    <div>
-      <div className="flex justify-center items-center text-red-500 text-9xl w-full h-80 ">
-        <span className="loading loading-spinner text-primary"></span>
+    <>
+      <div className="flex justify-center items-center w-full min-h-screen font-extrabold">
+        <span className="loading loading-spinner text-secondary loading-xl "></span>
       </div>
-    </div>
+    </>
   );
 };
 

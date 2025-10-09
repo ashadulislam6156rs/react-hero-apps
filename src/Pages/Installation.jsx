@@ -51,7 +51,10 @@ const Installation = () => {
   const CurrentApps = sortHandler();
 
   return (
-    <div className="max-w-7xl mx-auto md:px-7 px-2">
+    <>
+      {
+        loading ? <Loading /> :
+          <div className="max-w-7xl mx-auto md:px-7 px-2">
       <div className="text-center py-10">
         <h1 className="text-[#001931] font-bold text-2xl md:text-4xl pb-3">
           Your Installed Apps
@@ -79,8 +82,8 @@ const Installation = () => {
       </div>
 
       {
-        loading ? <Loading /> :
-          <div className="grid grid-cols-1 gap-5 py-6">
+        
+         <div className="grid grid-cols-1 gap-5 py-6">
         { CurrentApps.length == 0 ? <ErrorAppNotInstall/> : CurrentApps.map((singleAppInstall, index) => (
           <div
             key={index}
@@ -128,9 +131,11 @@ const Installation = () => {
             </div>
           </div>
         ))}
-      </div>
-    }  
+      </div> 
+      }  
     </div>
+      }
+    </>
   );
 };
 

@@ -43,7 +43,9 @@ const AppDetails = () => {
 
   return (
     <>
-      <div className="md:px-7 px-2 py-10 max-w-7xl mx-auto">
+      {
+        loading ? <Loading /> :
+           <div className="md:px-7 px-2 py-10 max-w-7xl mx-auto">
         {/* Card */}
         <div>
           <div className="card flex flex-col sm:flex-row gap-10 border-b-2 border-gray-200 pb-4 rounded-none items-center">
@@ -131,6 +133,7 @@ const AppDetails = () => {
           <p className="text-[#627382] text-base">{description}</p>
         </div>
       </div>
+     }
     </>
   );
 };
