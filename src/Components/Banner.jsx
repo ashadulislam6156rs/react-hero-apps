@@ -19,7 +19,7 @@ const Banner = () => {
               Apps
             </h1>
             <p className="py-6 max-w-4xl px-4">
-              At HERO.IO, we create innovative apps designed to make everyday
+              At Smart Apps, we create innovative apps designed to make everyday
               life simpler, smarter, and more engaging. Our mission is to
               transform your ideas into digital experiences that truly make a
               meaningful impact.

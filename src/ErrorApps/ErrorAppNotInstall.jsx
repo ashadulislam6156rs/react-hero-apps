@@ -20,11 +20,11 @@ const ErrorAppNotInstall = () => {
           Explore the store and start installing your favorite tools!
         </p>
         <Link
-          to={"/"}
+          to={"/AppsPage"}
           className="btn bg-gradient-to-l to-[#632EE3] from-[#9F62F2] hover:from-[#632EE3] hover:to-[#9F62F2] text-white flex items-center gap-2 px-5 py-2 rounded-md"
         >
           <HiOutlineHome />
-          Go to Home
+          Go to Apps
         </Link>
       </div>
     </div>

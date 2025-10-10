@@ -22,7 +22,7 @@ const AppsPage = () => {
   useEffect(() => {
     if (userSearchData) {
       setSearchLoading(true);
-      setTimeout(() => setSearchLoading(false),1000)
+      setTimeout(() => setSearchLoading(false),500)
     } else {
       setSearchLoading(false);
     }
