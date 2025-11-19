@@ -61,7 +61,7 @@ The platform focuses on speed, user experience, and real-time data handling to p
 ## 📸 Website Screenshots
 
 ### 🏠 Home Page
-![Homepage Screenshot](public/websiteScreenshot/Home_page.jpeg)
+![Homepage Screenshot](public/home_page.jpg)
 
 ---
 ### 🖥️ How to Run Locally:
@@ -72,7 +72,7 @@ Create file smart-apps
 cd smart-apps
 ```
 ```
-git clone https://github.com/ashadulislam6156rs/Toy-Store-Platform-ToyTales.git
+git clone https://github.com/ashadulislam6156rs/react-hero-apps.git
 
 ```
 2. Install Dependencies
