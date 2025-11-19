@@ -5,7 +5,7 @@ It allows users to explore top-rated, popular, and newly released apps in a clea
 The platform focuses on speed, user experience, and real-time data handling to provide smooth app discovery.
 
 ## 🌐 Live Preview:
-🔗 Live Site:
+🔗 Live Site: [Click Smart Apps](https://react-smart-apps.netlify.app/)
 
 ## 🌟 Main Features:
 - 🔍 Browse trending, popular, and newly released apps
